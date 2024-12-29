@@ -60,32 +60,62 @@ label{
     text-align: center;
 }
 
-@media (max-width:680px){
-    #formContainer{
-        width: 400px;
+#message p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        padding: 10px;
     }
 
-    input{
-    width: 100%;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 20px;
-    border: none;
+    form {
+        padding: 15px;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form input, form button {
+        padding: 8px;
     }
 }
 
-@media (max-width:480px){
-    #formContainer{
-        width: inherit;
+/* Small devices (tablets, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    form {
+        max-width: 450px;
+    }
+}
+
+/* Medium devices (desktops, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    form {
+        max-width: 600px;
     }
 
-    input{
-    width: 100%;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 20px;
-    border: none;
+    form input, form button {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    form {
+        max-width: 700px;
+    }
+}
+
+/* Extra large devices (larger desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    form {
+        max-width: 800px;
+    }
+
+    form input, form button {
+        font-size: 18px;
     }
 }
