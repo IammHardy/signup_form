@@ -77,7 +77,7 @@ label{
 
 @media (max-width:480px){
     #formContainer{
-        width: 300px;
+        width: inherit;
     }
 
     input{
