@@ -3,7 +3,6 @@ body{
     padding:0;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -59,4 +58,34 @@ h1{
 }
 label{
     text-align: center;
+}
+
+@media (max-width:680px){
+    #formContainer{
+        width: 400px;
+    }
+
+    input{
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    }
+}
+
+@media (max-width:480px){
+    #formContainer{
+        width: 300px;
+    }
+
+    input{
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    }
 }
